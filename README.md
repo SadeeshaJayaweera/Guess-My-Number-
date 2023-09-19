@@ -6,7 +6,7 @@ This project was inspired by and is part of the coding practice from [Jonas Schm
 
 ![Game Screenshot]
 
-<img src='Guess My Number.png'>
+<img src='Guess My Number .png'>
 
 ## Features 🌟
 
