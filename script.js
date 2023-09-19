@@ -24,6 +24,7 @@ let secretNumber = Math.trunc(Math.random() *20 ) + 1;
 // document.querySelector('.number').textContent = number; 
 
 let score = 20;
+let highscore = 0;
 
 
 // Lecture 2 - Handling Click Events 🧑‍💻
@@ -50,13 +51,21 @@ document.querySelector('.check').addEventListener('click',function () {
         document.querySelector('body').style.backgroundColor = '#60b347';
         document.querySelector('.number').style.width='30rem';
 
+        //highScore 
+        if(score > highscore)
+        {
+            highscore = score;
+            document.querySelector('.highscore').textContent = highscore;
+        }
+        
+
     }
     //when guess is too High
-    else if(guess>secretNumber)
+    else if(guess !== secretNumber)
 
         if(score>1)
         {
-            document.querySelector('.message').textContent='Too High 🤒 ';
+            document.querySelector('.message').textContent= guess > secretNumber ? "🤒 Too High!" : "🪫 Too Low!";
             score--;
             document.querySelector('.score').textContent=score;
     
@@ -68,26 +77,12 @@ document.querySelector('.check').addEventListener('click',function () {
             
         }
    
-        //When Guess is Too Low 
-    else if(guess<secretNumber)
-        
-        if(score>1)
-        {
-            document.querySelector('.message').textContent='Too Low 🪫 ';
-            score--;
-            document.querySelector('.score').textContent=score;
-        }
-        else 
-        {
-            document.querySelector('.message').textContent='You Lost the Game 😰 ';
-            document.querySelector('.score').textContent=0;
-        }
-    {
+      
 
     }
    
 
-});
+);
 
 // Reseting the Content - Again Key 
 document.querySelector('.btn').addEventListener('click', function(){
@@ -101,7 +96,7 @@ document.querySelector('.btn').addEventListener('click', function(){
     document.querySelector('.number').style.width='15rem';
 
     //New Secret Number 
-    let score = 20;
+    score = 20;
     secretNumber = Math.trunc(Math.random() *20 ) + 1;
 
 
