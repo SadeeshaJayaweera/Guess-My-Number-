@@ -1,9 +1,8 @@
-Certainly! Here's a decorative GitHub README for your "Guess My Number" JavaScript project with emojis:
 
-```markdown
 # 🎮 Guess My Number Game
 
-**Guess My Number** is a simple JavaScript game where you try to guess a randomly generated number between 1 and 20. This project was inspired by and is part of the coding practice from [Jonas Schmedtmann](https://codingheroes.io/) as a way to improve my coding skills. 🚀
+**Guess My Number** is a simple JavaScript game where you try to guess a randomly generated number between 1 and 20. 
+This project was inspired by and is part of the coding practice from [Jonas Schmedtmann) as a way to improve my coding skills. 🚀
 
 ![Game Screenshot](screenshot.png)
 
@@ -21,7 +20,7 @@ Certainly! Here's a decorative GitHub README for your "Guess My Number" JavaScri
 
    ```bash
    git clone https://github.com/Sadeesha_Jayaweera/guess-my-number.git
-   ```
+
 
 2. Open the `index.html` file in your web browser to play the game. 🌐
 
