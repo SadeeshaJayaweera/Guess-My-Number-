@@ -4,7 +4,9 @@
 **Guess My Number** is a simple JavaScript game where you try to guess a randomly generated number between 1 and 20. 
 This project was inspired by and is part of the coding practice from [Jonas Schmedtmann) as a way to improve my coding skills. 🚀
 
-![Game Screenshot](screenshot.png)
+![Game Screenshot]
+
+<img src='Guess My Number.png'>
 
 ## Features 🌟
 
